@@ -7,7 +7,7 @@
     <project path="vendor/xiaomi/sky" name="Ram999000/android_vendor_xiaomi_sky" remote="github" revision="15.0" />
 
     <!-- Kernel Tree -->
-    <project path="kernel/xiaomi/sky" name="Ram999000/android_kernel_xiaomi_sky" remote="github" revision="15.0" />
+    <project path="kernel/xiaomi/sky" name="Ram999000/android_xiaomi_sky_kernel" remote="github" revision="15.0" />
 
     <!-- Dolby Hardware Dependency -->
     <project path="hardware/dolby" name="Ram999000/android_hardware_dolby" remote="github" />
