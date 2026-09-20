@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Custom remote for personal repos -->
-    <remote name="mygithub" fetch="https://github.com" />
+  <!-- Remotes -->
+  <remote  name="github"
+           fetch="https://github.com/" />
 
-    <!-- Device Tree -->
-    <project path="device/xiaomi/sky" name="Ram999000/android_device_xiaomi_sky" remote="mygithub" revision="15.0" />
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS" />
 
-    <!-- Vendor Tree -->
-    <project path="vendor/xiaomi/sky" name="Ram999000/android_vendor_xiaomi_sky" remote="mygithub" revision="15.0" />
+  <!-- Device tree -->
+  <project path="device/xiaomi/sky"
+           name="Ram999000/android_device_xiaomi_sky"
+           remote="github"
+           revision="15.0" />
 
-    <!-- Kernel Tree -->
-    <project path="kernel/xiaomi/sky" name="Ram999000/android_xiaomi_sky_kernel" remote="mygithub" revision="15.0" />
+  <!-- Vendor blobs -->
+  <project path="vendor/xiaomi/sky"
+           name="Ram999000/android_vendor_xiaomi_sky"
+           remote="github"
+           revision="15.0" />
 
-    <!-- Dolby Hardware Dependency -->
-    <project path="hardware/dolby" name="Ram999000/android_hardware_dolby" remote="mygithub" revision="16" />
+  <!-- Kernel Tree (Name Fixed) -->
+  <project path="kernel/xiaomi/sky"
+           name="Ram999000/android_xiaomi_sky_kernel"
+           remote="github"
+           revision="15.0" />
 
-    <!-- Xiaomi Hardware Dependency (Missing folder fix) -->
-    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="mygithub" revision="lineage-22.1" />
+  <!-- Dolby Hardware Dependency (Branch Fixed) -->
+  <project path="hardware/dolby"
+           name="Ram999000/android_hardware_dolby"
+           remote="github"
+           revision="16" />
+
+  <!-- Required by device tree / soong namespace (Updated for Android 15) -->
+  <project path="hardware/xiaomi"
+           name="android_hardware_xiaomi"
+           remote="lineage"
+           revision="lineage-22.1" />
 </manifest>
