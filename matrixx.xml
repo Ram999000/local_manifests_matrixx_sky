@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Custom remote for personal repos (authentication error fix) -->
+    <!-- Custom remote for personal repos -->
     <remote name="mygithub" fetch="https://github.com" />
 
     <!-- Device Tree -->
@@ -12,6 +12,9 @@
     <!-- Kernel Tree -->
     <project path="kernel/xiaomi/sky" name="Ram999000/android_xiaomi_sky_kernel" remote="mygithub" revision="15.0" />
 
-    <!-- Dolby Hardware Dependency (branch 16 fix) -->
+    <!-- Dolby Hardware Dependency -->
     <project path="hardware/dolby" name="Ram999000/android_hardware_dolby" remote="mygithub" revision="16" />
+
+    <!-- Xiaomi Hardware Dependency (Missing folder fix) -->
+    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="mygithub" revision="lineage-22.1" />
 </manifest>
