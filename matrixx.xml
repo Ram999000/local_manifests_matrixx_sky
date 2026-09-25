@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Remotes -->
-  <remote  name="mygithub"
-           fetch="https://github.com/" />
+  <remote name="mygithub"
+          fetch=".." />
 
-  <remote  name="lineageos"
-           fetch="https://github.com/LineageOS" />
+  <remote name="lineageos"
+          fetch="https://github.com" />
 
   <!-- Device tree -->
   <project path="device/xiaomi/sky"
