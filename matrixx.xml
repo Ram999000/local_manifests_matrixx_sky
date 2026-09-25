@@ -5,7 +5,7 @@
           fetch=".." />
 
   <remote name="lineageos"
-          fetch="https://github.com" />
+          fetch="../LineageOS" />
 
   <!-- Device tree -->
   <project path="device/xiaomi/sky"
