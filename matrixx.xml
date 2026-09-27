@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Remotes -->
-  <remote name="mygithub"
-          fetch=".." />
+  <!-- GitHub Remote -->
+  <remote name="github"
+          fetch="https://github.com" />
 
-  <remote name="lineageos"
-          fetch="../LineageOS" />
-
-  <!-- Device tree -->
+  <!-- Device Tree -->
   <project path="device/xiaomi/sky"
            name="Ram999000/android_device_xiaomi_sky"
-           remote="mygithub"
+           remote="github"
            revision="15.0" />
 
-  <!-- Vendor blobs -->
+  <!-- Vendor Blobs -->
   <project path="vendor/xiaomi/sky"
            name="Ram999000/android_vendor_xiaomi_sky"
-           remote="mygithub"
+           remote="github"
            revision="15.0" />
 
   <!-- Kernel Tree -->
   <project path="kernel/xiaomi/sky"
            name="Ram999000/android_xiaomi_sky_kernel"
-           remote="mygithub"
+           remote="github"
            revision="15.0" />
 
-  <!-- Dolby Hardware Dependency -->
+  <!-- Dolby Hardware Dependency (Android 15) -->
   <project path="hardware/dolby"
-           name="Ram999000/android_hardware_dolby"
-           remote="mygithub"
-           revision="16" />
+           name="crdroidandroid/android_hardware_dolby"
+           remote="github"
+           revision="15.0" />
 
-  <!-- Required by device tree / soong namespace -->
+  <!-- Required by Device Tree / Soong Namespace -->
   <project path="hardware/xiaomi"
-           name="android_hardware_xiaomi"
-           remote="lineageos"
+           name="LineageOS/android_hardware_xiaomi"
+           remote="github"
            revision="lineage-22.1" />
 </manifest>
