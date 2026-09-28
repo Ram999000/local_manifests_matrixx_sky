@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- GitHub Remote -->
-  <remote name="github"
+  <!-- Unique Remote to avoid conflict -->
+  <remote name="sky-remote"
           fetch="https://github.com" />
 
   <!-- Device Tree -->
   <project path="device/xiaomi/sky"
            name="Ram999000/android_device_xiaomi_sky"
-           remote="github"
+           remote="sky-remote"
            revision="15.0" />
 
   <!-- Vendor Blobs -->
   <project path="vendor/xiaomi/sky"
            name="Ram999000/android_vendor_xiaomi_sky"
-           remote="github"
+           remote="sky-remote"
            revision="15.0" />
 
   <!-- Kernel Tree -->
   <project path="kernel/xiaomi/sky"
            name="Ram999000/android_xiaomi_sky_kernel"
-           remote="github"
+           remote="sky-remote"
            revision="15.0" />
 
   <!-- Dolby Hardware Dependency (Android 15) -->
   <project path="hardware/dolby"
            name="crdroidandroid/android_hardware_dolby"
-           remote="github"
+           remote="sky-remote"
            revision="15.0" />
 
   <!-- Required by Device Tree / Soong Namespace -->
   <project path="hardware/xiaomi"
            name="LineageOS/android_hardware_xiaomi"
-           remote="github"
+           remote="sky-remote"
            revision="lineage-22.1" />
 </manifest>
