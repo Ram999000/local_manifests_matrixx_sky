@@ -16,8 +16,8 @@
            remote="sky-remote"
            revision="15.0" />
 
-  <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/sky"
+  <!-- Kernel Tree (Exact path matched with BoardConfig.mk) -->
+  <project path="device/xiaomi/sky-kernel"
            name="Ram999000/android_xiaomi_sky_kernel"
            remote="sky-remote"
            revision="15.0" />
