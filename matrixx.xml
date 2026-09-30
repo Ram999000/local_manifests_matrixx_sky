@@ -4,6 +4,13 @@
   <remote name="sky-remote"
           fetch="https://github.com" />
 
+  <!-- Fix for Matrixx frameworks/base naming bug -->
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base"
+           name="ProjectMatrixx/frameworks_base"
+           remote="sky-remote"
+           revision="15.0" />
+
   <!-- Device Tree -->
   <project path="device/xiaomi/sky"
            name="Ram999000/android_device_xiaomi_sky"
