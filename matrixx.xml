@@ -40,15 +40,4 @@
            name="LineageOS/android_hardware_xiaomi"
            remote="sky-remote"
            revision="lineage-22.1" />
-
-  <!-- Qualcomm SM8450 Audio HAL (AGM & PAL) -->
-  <project path="hardware/qcom-caf/sm8450/audio/agm"
-           name="LineageOS/android_vendor_qcom_opensource_agm"
-           remote="sky-remote"
-           revision="lineage-22.1-caf-sm8450" />
-
-  <project path="hardware/qcom-caf/sm8450/audio/pal"
-           name="LineageOS/android_vendor_qcom_opensource_arpal-lx"
-           remote="sky-remote"
-           revision="lineage-22.1-caf-sm8450" />
 </manifest>
