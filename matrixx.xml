@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <!-- Unique Remote to avoid conflict -->
   <remote name="sky-remote"
           fetch="https://github.com" />
@@ -23,7 +24,7 @@
            remote="sky-remote"
            revision="15.0" />
 
-  <!-- Kernel Tree (Exact path matched with BoardConfig.mk) -->
+  <!-- Kernel Tree (Prebuilt kernel matched with BoardConfig.mk) -->
   <project path="device/xiaomi/sky-kernel"
            name="Ram999000/android_xiaomi_sky_kernel"
            remote="sky-remote"
@@ -35,9 +36,10 @@
            remote="sky-remote"
            revision="15.0" />
 
-  <!-- Required by Device Tree / Soong Namespace -->
+  <!-- Xiaomi Hardware Dependency (Lineage 22.2 Base) -->
   <project path="hardware/xiaomi"
            name="LineageOS/android_hardware_xiaomi"
            remote="sky-remote"
-           revision="lineage-22.1" />
+           revision="lineage-22.2" />
+
 </manifest>
