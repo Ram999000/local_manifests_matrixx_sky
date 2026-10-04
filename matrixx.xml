@@ -23,13 +23,13 @@
            remote="sky-remote"
            revision="16" />
 
-  <!-- Dolby Hardware Dependency -->
+  <!-- Dolby Hardware Dependency (Android 16/17 Branch: a) -->
   <project path="hardware/dolby"
-           name="Ram999000/android_hardware_dolby"
+           name="Ram999000/hardware_dolby"
            remote="sky-remote"
-           revision="16" />
+           revision="a" />
 
-  <!-- Xiaomi Hardware Dependency (Lineage 23 / Android 16) -->
+  <!-- Xiaomi Hardware Dependency (Lineage 23.2 / Android 16) -->
   <project path="hardware/xiaomi"
            name="LineageOS/android_hardware_xiaomi"
            remote="sky-remote"
