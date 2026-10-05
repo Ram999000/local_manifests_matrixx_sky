@@ -3,19 +3,19 @@
   <!-- Remote GitHub -->
   <remote name="sky-remote" fetch="https://github.com" />
 
-  <!-- Device Tree (Android 16) -->
+  <!-- Device Tree -->
   <project path="device/xiaomi/sky"
            name="Ram999000/device_xiaomi_sky"
            remote="sky-remote"
            revision="16" />
 
-  <!-- Vendor Blobs (Android 16) -->
+  <!-- Vendor Blobs -->
   <project path="vendor/xiaomi/sky"
            name="Ram999000/vendor_xiaomi_sky"
            remote="sky-remote"
            revision="16" />
 
-  <!-- Kernel Tree (Android 16) -->
+  <!-- Kernel Tree -->
   <project path="device/xiaomi/sky-kernel"
            name="Ram999000/device_xiaomi_sky-kernel"
            remote="sky-remote"
@@ -27,21 +27,9 @@
            remote="sky-remote"
            revision="a" />
 
-  <!-- Xiaomi Hardware Dependency (Lineage 23.2 / Android 16) -->
+  <!-- Xiaomi Hardware Dependency -->
   <project path="hardware/xiaomi"
            name="Ram999000/android_hardware_xiaomi"
            remote="sky-remote"
            revision="lineage-23.2" />
-
-  <!-- Qualcomm Display HAL (Android 16 / Lineage 23.2) -->
-  <project path="hardware/qcom-caf/sm8450/display"
-           name="Ram999000/android_hardware_qcom_display"
-           remote="sky-remote"
-           revision="lineage-23.2-caf-sm8450" />
-
-  <!-- Qualcomm Audio HAL (Android 16 / Lineage 23.2) -->
-  <project path="hardware/qcom-caf/sm8450/audio"
-           name="Ram999000/android_hardware_qcom_audio-ar"
-           remote="sky-remote"
-           revision="lineage-23.2-caf-sm8450" />
 </manifest>
