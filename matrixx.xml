@@ -27,16 +27,9 @@
            remote="sky-remote"
            revision="a" />
 
-  <!-- Xiaomi Hardware Dependency (Lineage 23.2 / Android 16) -->
+  <!-- Xiaomi Hardware Dependency -->
   <project path="hardware/xiaomi"
            name="Ram999000/android_hardware_xiaomi"
-           remote="sky-remote"
-           revision="lineage-23.2" />
-
-  <!-- Fixed Hardware Compat (No Duplicate Protobuf) -->
-  <remove-project name="LineageOS/android_hardware_lineage_compat" />
-  <project path="hardware/lineage/compat"
-           name="Ram999000/android_hardware_lineage_compat"
            remote="sky-remote"
            revision="lineage-23.2" />
 
@@ -46,7 +39,7 @@
            remote="sky-remote"
            revision="lineage-23.2" />
 
-  <!-- Remove Unused Google Virtual Emulators (Fix Cuttlefish / Trout) -->
+  <!-- Remove Unused Google Virtual Emulators -->
   <remove-project name="device/google/cuttlefish_vmm" />
   <remove-project name="device/google/trout" />
 </manifest>
