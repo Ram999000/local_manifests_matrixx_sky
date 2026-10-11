@@ -39,12 +39,12 @@
            remote="sky-remote"
            revision="lineage-23.2" />
 
-  <!-- Permanent Fix: Lineage Interfaces (Fixed Health Service) -->
+  <!-- Permanent Fix: Lineage Interfaces (Fixed Health Service Typo) -->
   <remove-project name="LineageOS/android_hardware_lineage_interfaces" />
   <project path="hardware/lineage/interfaces"
            name="Ram999000/android_hardware_lineage_interfaces"
            remote="sky-remote"
-           revision="lineage-24.0" />
+           revision="lineage-23.2" />
 
   <!-- Remove Unused Google Virtual Emulators -->
   <remove-project name="device/google/cuttlefish_vmm" />
