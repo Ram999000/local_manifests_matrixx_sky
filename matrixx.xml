@@ -3,7 +3,7 @@
   <!-- Remote GitHub -->
   <remote name="sky-remote" fetch="https://github.com" />
 
-  <!-- Device Tree (Android 16) -->
+  <!-- Device Tree (Android 16) - PERMANENT FIXED VERSION -->
   <project path="device/xiaomi/sky"
            name="Ram999000/device_xiaomi_sky"
            remote="sky-remote"
@@ -53,7 +53,7 @@
            remote="sky-remote"
            revision="lineage-23.2" />
 
-  <!-- Remove Unused Google Virtual Emulators -->
+  <!-- Remove Unused Google Virtual Emulators - Saves Space for Full GApps -->
   <remove-project name="device/google/cuttlefish_vmm" />
   <remove-project name="device/google/trout" />
 </manifest>
